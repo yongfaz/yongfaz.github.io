@@ -32,13 +32,13 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
       
-    - name: install buster
+    - name: Install buster
       run: |
         pip install wheel
         pip install buster
         
-    - name: deploy ghost
-      run: buster generate --domain='-H -D155.94.182.221 http://155.94.182.221 && rm static/photo-*ixlib?'
+    - name: Deploy ghost
+      run: buster generate --domain=http://155.94.182.221
     
     - name: Publish generated content to GitHub Pages
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
