@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Install buster
-      run: pip install wheel buster 
+      run: pip3 install wheel buster 
 
     # Runs a set of commands using the runners shell
     - name: deploy ghost
