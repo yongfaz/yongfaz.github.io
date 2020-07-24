@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: https://yongfaz.github.io/sitemap.xml
+Sitemap: https://yzhou79.xyz/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/

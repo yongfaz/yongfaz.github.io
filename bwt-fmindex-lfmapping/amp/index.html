@@ -13,8 +13,8 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="理解Burrows-Wheeler Transform的关键性质">
     <meta property="og:description" content="理解BWT变换过程中，最后一列第i个出现的字符x，与第一列中第i个出现的x是同一个">
-    <meta property="og:url" content="https://yongfaz.github.io/bwt-fmindex-lfmapping/">
-    <meta property="og:image" content="https://yongfaz.github.io/content/images/2020/07/image-3-1-.png">
+    <meta property="og:url" content="https://yzhou79.xyz/bwt-fmindex-lfmapping/">
+    <meta property="og:image" content="https://yzhou79.xyz/content/images/2020/07/image-3-1-.png">
     <meta property="article:published_time" content="2020-07-21T02:02:32.000Z">
     <meta property="article:modified_time" content="2020-07-21T13:40:19.000Z">
     <meta property="article:tag" content="Coding">
@@ -23,8 +23,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="理解Burrows-Wheeler Transform的关键性质">
     <meta name="twitter:description" content="理解BWT变换过程中，最后一列第i个出现的字符x，与第一列中第i个出现的x是同一个">
-    <meta name="twitter:url" content="https://yongfaz.github.io/bwt-fmindex-lfmapping/">
-    <meta name="twitter:image" content="https://yongfaz.github.io/content/images/2020/07/image-3-1-.png">
+    <meta name="twitter:url" content="https://yzhou79.xyz/bwt-fmindex-lfmapping/">
+    <meta name="twitter:image" content="https://yzhou79.xyz/content/images/2020/07/image-3-1-.png">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Peter">
     <meta name="twitter:label2" content="Filed under">
@@ -40,10 +40,10 @@
     "publisher": {
         "@type": "Organization",
         "name": "Peter",
-        "url": "https://yongfaz.github.io/",
+        "url": "https://yzhou79.xyz/",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://yongfaz.github.io/content/images/2020/07/iconfinder_Dictionary_Translate_Letters_Words_Translation_1329087--1-.svg",
+            "url": "https://yzhou79.xyz/content/images/2020/07/iconfinder_Dictionary_Translate_Letters_Words_Translation_1329087--1-.svg",
             "width": 32,
             "height": 32
         }
@@ -51,16 +51,16 @@
     "author": {
         "@type": "Person",
         "name": "Peter",
-        "url": "https://yongfaz.github.io/author/peter/",
+        "url": "https://yzhou79.xyz/author/peter/",
         "sameAs": []
     },
     "headline": "理解Burrows-Wheeler Transform的关键性质",
-    "url": "https://yongfaz.github.io/bwt-fmindex-lfmapping/",
+    "url": "https://yzhou79.xyz/bwt-fmindex-lfmapping/",
     "datePublished": "2020-07-21T02:02:32.000Z",
     "dateModified": "2020-07-21T13:40:19.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://yongfaz.github.io/content/images/2020/07/image-3-1-.png",
+        "url": "https://yzhou79.xyz/content/images/2020/07/image-3-1-.png",
         "width": 1244,
         "height": 498
     },
@@ -68,7 +68,7 @@
     "description": "理解BWT变换过程中，最后一列第i个出现的字符x，与第一列中第i个出现的x是同一个",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://yongfaz.github.io/"
+        "@id": "https://yzhou79.xyz/"
     }
 }
     </script>
@@ -645,7 +645,7 @@
 <body class="amp-template">
     <header class="page-header">
         <a href="../../">
-                <amp-img class="site-icon" src="https://yongfaz.github.io/content/images/2020/07/favicon.png" width="50" height="50" layout="fixed"></amp-img>
+                <amp-img class="site-icon" src="https://yzhou79.xyz/content/images/2020/07/favicon.png" width="50" height="50" layout="fixed"></amp-img>
         </a>
     </header>
 
@@ -660,18 +660,18 @@
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="https://yongfaz.github.io/content/images/2020/07/image-3-1-.png" width="600" height="340" layout="responsive"></amp-img>
+                <amp-img src="https://yzhou79.xyz/content/images/2020/07/image-3-1-.png" width="600" height="340" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
-                <p>最近在看bowtie的相关文章和论文，其中提到了FM-index和LF-mapping. 大部分文章和视频只提到了一个BWT的一个关键性质，并没有讲这个属性是怎么来的？或许是太简单了，大家都没有提，但是对于新手来讲，没人讲解的话理解起来就容易摸不到头绪。</p><blockquote>在Burrows-Wheeler Matrices中，最后一列第i个出现的字符x，与第一列中第i个出现的x是同一个</blockquote><p>怎么理解呢？</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yongfaz.github.io/content/images/2020/07/image-3.png" class="kg-image" alt srcset="https://yongfaz.github.io/content/images/size/w600/2020/07/image-3.png 600w, https://yongfaz.github.io/content/images/size/w1000/2020/07/image-3.png 1000w, https://yongfaz.github.io/content/images/2020/07/image-3.png 1244w" width="1244" height="498" layout="responsive"></amp-img><figcaption>Figure 1. BWT 变换过程</figcaption></figure><p>从<em>abba$aa</em>，可以看出有4个a。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yongfaz.github.io/content/images/2020/07/image-4.png" class="kg-image" alt width="348" height="356" layout="responsive"></amp-img><figcaption>Figure 2. 4个a的情况</figcaption></figure><p>因为BWT变换是轮转来的，我们把上图的最后一列移位到最开始。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yongfaz.github.io/content/images/2020/07/image-6.png" class="kg-image" alt width="320" height="386" layout="responsive"></amp-img><figcaption>Figure 3. 移位</figcaption></figure><p>移位之后就变成了这个样子。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yongfaz.github.io/content/images/2020/07/image-5.png" class="kg-image" alt width="311" height="349" layout="responsive"></amp-img><figcaption>Figure 4 移位之后</figcaption></figure><p>会发现变成了Figure 1中的4个a顺序，为什么顺序是一模一样的？那是因为<strong>BWT的变换是一个按照字典排序的过程，Figure 2的4组是已经排序好的，在第一列加上相同的a，并不影响排序，也就是排序的结果是一模一样的。</strong></p>
+                <p>最近在看bowtie的相关文章和论文，其中提到了FM-index和LF-mapping. 大部分文章和视频只提到了一个BWT的一个关键性质，并没有讲这个属性是怎么来的？或许是太简单了，大家都没有提，但是对于新手来讲，没人讲解的话理解起来就容易摸不到头绪。</p><blockquote>在Burrows-Wheeler Matrices中，最后一列第i个出现的字符x，与第一列中第i个出现的x是同一个</blockquote><p>怎么理解呢？</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yzhou79.xyz/content/images/2020/07/image-3.png" class="kg-image" alt srcset="https://yzhou79.xyz/content/images/size/w600/2020/07/image-3.png 600w, https://yzhou79.xyz/content/images/size/w1000/2020/07/image-3.png 1000w, https://yzhou79.xyz/content/images/2020/07/image-3.png 1244w" width="1244" height="498" layout="responsive"></amp-img><figcaption>Figure 1. BWT 变换过程</figcaption></figure><p>从<em>abba$aa</em>，可以看出有4个a。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yzhou79.xyz/content/images/2020/07/image-4.png" class="kg-image" alt width="348" height="356" layout="responsive"></amp-img><figcaption>Figure 2. 4个a的情况</figcaption></figure><p>因为BWT变换是轮转来的，我们把上图的最后一列移位到最开始。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yzhou79.xyz/content/images/2020/07/image-6.png" class="kg-image" alt width="320" height="386" layout="responsive"></amp-img><figcaption>Figure 3. 移位</figcaption></figure><p>移位之后就变成了这个样子。</p><figure class="kg-card kg-image-card kg-card-hascaption"><amp-img src="https://yzhou79.xyz/content/images/2020/07/image-5.png" class="kg-image" alt width="311" height="349" layout="responsive"></amp-img><figcaption>Figure 4 移位之后</figcaption></figure><p>会发现变成了Figure 1中的4个a顺序，为什么顺序是一模一样的？那是因为<strong>BWT的变换是一个按照字典排序的过程，Figure 2的4组是已经排序好的，在第一列加上相同的a，并不影响排序，也就是排序的结果是一模一样的。</strong></p>
 
             </section>
 
         </article>
     </main>
     <footer class="page-footer">
-            <amp-img class="site-icon" src="https://yongfaz.github.io/content/images/2020/07/favicon.png" width="50" height="50" layout="fixed"></amp-img>
+            <amp-img class="site-icon" src="https://yzhou79.xyz/content/images/2020/07/favicon.png" width="50" height="50" layout="fixed"></amp-img>
         <h3>Peter</h3>
             <p>Thoughts, stories and ideas.</p>
         <p><a href="../../">Read more posts →</a></p>
