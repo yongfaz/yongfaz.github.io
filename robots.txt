@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://155.94.182.221/sitemap.xml
+Disallow: /ghost/
+Disallow: /p/
