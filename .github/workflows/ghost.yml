@@ -22,14 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Install wheel
-      run: pip install wheel 
-    - name: Install buster
-      run: pip install buster 
     # Runs a set of commands using the runners shell
     - name: deploy ghost
-      run: buster generate --domain='-H -D155.94.182.221 http://155.94.182.221 && rm static/photo-*ixlib?'
+      run: |
+        pip install wheel 
+        pip install buster 
+        buster generate --domain='-H -D155.94.182.221 http://155.94.182.221 && rm static/photo-*ixlib?'
     
     - name: Publish generated content to GitHub Pages
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
