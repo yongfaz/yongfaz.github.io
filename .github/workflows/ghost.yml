@@ -27,6 +27,7 @@ jobs:
       run: |
         pip install wheel 
         pip install buster 
+        ls /usr/local/bin/
         buster generate --domain='-H -D155.94.182.221 http://155.94.182.221 && rm static/photo-*ixlib?'
     
     - name: Publish generated content to GitHub Pages
