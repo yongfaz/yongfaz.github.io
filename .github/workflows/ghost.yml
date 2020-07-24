@@ -39,9 +39,11 @@ jobs:
         pip install buster
         
     - name: Deploy ghost
-      run: buster generate --domain=http://155.94.182.221
+      run: buster generate --domain=https://ghost.yzhou79.xyz
     - name: Fix link
-      run: find static -type f -exec sed -i 's+http://155.94.182.221+https://yzhou79.xyz+g' {} +
+      run: |
+        find static -type f -exec sed -i 's+https://ghost.yzhou79.xyz+https://yzhou79.xyz+g' {} +
+        find static -type f -exec sed -i 's+https://yzhou79.xyz/ghost+https://ghost.yzhou79.xyz/ghost+g' {} +
       
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.7
