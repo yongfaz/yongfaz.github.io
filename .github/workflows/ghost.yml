@@ -41,7 +41,7 @@ jobs:
     - name: Deploy ghost
       run: buster generate --domain=http://155.94.182.221
     - name: Fix link
-      run: find static -type f -exec sed -i 's+155.94.182.221+yongfaz.github.io+g' {} +
+      run: find static -type f -exec sed -i 's+http://155.94.182.221+https://yongfaz.github.io+g' {} +
       
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.7
