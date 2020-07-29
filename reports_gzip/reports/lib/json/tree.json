@@ -1,0 +1,134 @@
+{
+  "nodes":
+  [
+    {
+      "name":"CRC"
+      , "id":1048653784
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"CRC.B2"
+          , "id":1049018816
+          , "type":"bb"
+        }
+        , {
+          "name":"CRC.B1"
+          , "id":1049119504
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1094571040
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":1070947920
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"CRC.B0"
+          , "id":1049073184
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"StaticHuffman"
+      , "id":1048838536
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"StaticHuffman.B0"
+          , "id":1051032464
+          , "type":"bb"
+        }
+        , {
+          "name":"StaticHuffman.B1"
+          , "id":1051029760
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":1922181088
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 6"
+              , "id":1909224336
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"StaticHuffman.B2"
+          , "id":1064242160
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"LZReduction"
+      , "id":1048840600
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"LZReduction.B1"
+          , "id":1049684208
+          , "type":"bb"
+        }
+        , {
+          "name":"LZReduction.B3"
+          , "id":1049684784
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":1283553920
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 4"
+              , "id":1284051376
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"LZReduction.B2"
+          , "id":1049684704
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":1082648320
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"LZReduction.B4"
+          , "id":1049684864
+          , "type":"bb"
+        }
+        , {
+          "name":"LZReduction.B0"
+          , "id":1049469424
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

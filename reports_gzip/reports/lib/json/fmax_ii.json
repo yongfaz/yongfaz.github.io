@@ -1,0 +1,322 @@
+{
+  "basicblocks":
+  {
+    "CRC.B0":
+    {
+      "name":"CRC.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "CRC.B1":
+    {
+      "name":"CRC.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":124
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+                , "line":"1967"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "CRC.B2":
+    {
+      "name":"CRC.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":1
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "LZReduction.B0":
+    {
+      "name":"LZReduction.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "LZReduction.B1":
+    {
+      "name":"LZReduction.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "LZReduction.B2":
+    {
+      "name":"LZReduction.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":6
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+                , "line":"2011"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "LZReduction.B3":
+    {
+      "name":"LZReduction.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":233
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+                , "line":"2274"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "LZReduction.B4":
+    {
+      "name":"LZReduction.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":1
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "StaticHuffman.B0":
+    {
+      "name":"StaticHuffman.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "StaticHuffman.B1":
+    {
+      "name":"StaticHuffman.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":29
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+                , "line":"2348"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "StaticHuffman.B2":
+    {
+      "name":"StaticHuffman.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"240.0"
+      , "achieved_ii":1
+      , "latency":1
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "CRC":
+    {
+      "debug":
+      [
+        {
+          "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+          , "line":743
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "CRC__no_loop":
+        [
+          "CRC.B0"
+          , "CRC.B2"
+        ]
+        , "CRC.B1":
+        [
+          "CRC.B1"
+        ]
+      }
+    }
+    , "LZReduction":
+    {
+      "debug":
+      [
+        {
+          "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+          , "line":1996
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "LZReduction__no_loop":
+        [
+          "LZReduction.B0"
+          , "LZReduction.B1"
+          , "LZReduction.B4"
+        ]
+        , "LZReduction.B2":
+        [
+          "LZReduction.B2"
+        ]
+        , "LZReduction.B3":
+        [
+          "LZReduction.B3"
+        ]
+      }
+    }
+    , "StaticHuffman":
+    {
+      "debug":
+      [
+        {
+          "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/FPGAExampleDesigns/gzip/build/src/gzipkernel.cpp"
+          , "line":2301
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "StaticHuffman__no_loop":
+        [
+          "StaticHuffman.B0"
+          , "StaticHuffman.B2"
+        ]
+        , "StaticHuffman.B1":
+        [
+          "StaticHuffman.B1"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: _ZTSZZ9VectorAddRN2cl4sycl5queueERKSt5arrayIiLm10000EES6_RS4_ENKUlRNS0_7handlerEE53_12clES9_EUlNS0_2idILi1EEEE68_31"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/u46480/BaseKit-code-samples-2021.1-beta07/DPC++Compiler/vector-add/src/vector-add-buffers.cpp"
+            , "line":68
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"file:////glob/development-tools/versions/oneapi/beta07/inteloneapi/compiler/2021.1-beta07/linux/lib/oclfpga/aoc_help_pages/ipp1476408832230.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
